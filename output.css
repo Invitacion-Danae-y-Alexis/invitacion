@@ -989,13 +989,13 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
   .contador {
-    width: 95%;
-    min-height: 30vh; /* Reduce la altura mínima */
-    font-size: 0.9rem; /* Disminuye el tamaño de fuente */
+    background: url('DSC_9432.jpg') no-repeat center center; /* Asegura que el fondo se mantenga */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    min-height: 30vh; /* Ajusta la altura en móviles */
   }
+}
 
   .contador div {
     flex-direction: column; /* Cambia de fila a columna */
