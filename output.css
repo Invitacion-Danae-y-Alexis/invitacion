@@ -990,7 +990,7 @@ p {
 }
 
 .countdown {
-  font-size: 1rem;
+  font-size: .5rem;
   font-weight: bold;
   color: #f1a7c3;
 }
