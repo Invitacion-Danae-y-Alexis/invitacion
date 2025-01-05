@@ -974,13 +974,14 @@ p {
   justify-content: center; /* Centra los números horizontalmente */
   align-items: center; /* Centra los números verticalmente */
   gap: 10px; /* Espacio entre números */
-  width: auto; /* Ajusta automáticamente al contenido */
+  width: 50%; /* Ajusta automáticamente al contenido */
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 25px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   font-size: 1.5rem; /* Tamaño de fuente más grande */
+  overflow: hidden;
 }
 
 .contador div:hover {
