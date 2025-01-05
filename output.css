@@ -959,49 +959,55 @@ p {
   justify-content: center;
   align-items: center;
   min-height: 40vh;
-  background: url('DSC_9432.jpg') no-repeat center center;
+  background: url('fotos/DSC_9432.jpg') no-repeat center center;
   background-size: cover;
   border-radius: 5px;
   margin-top: 30px;
   font-family: 'Arial', sans-serif;
   font-size: 1rem;
   color: #f06d15;
-  text-align: center; /* Asegura que el contenido esté centrado */
+  text-align: center;
 }
 
 .contador div {
-  display: flex; /* Utiliza flexbox */
-  justify-content: center; /* Centra los números horizontalmente */
-  align-items: center; /* Centra los números verticalmente */
-  gap: 10px; /* Espacio entre números */
-  width: 50%; /* Ajusta automáticamente al contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 25px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  font-size: 1.5rem; /* Tamaño de fuente más grande */
-  overflow: hidden;
-  object-fit: cover;
+  font-size: 1.5rem;
 }
 
-.contador div:hover {
-  transform: scale(1.05);
+.contador div span {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.countdown {
-  font-size: .5rem;
-  font-weight: bold;
-  color: #f1a7c3;
-}
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .contador {
+    width: 95%;
+    min-height: 30vh; /* Reduce la altura mínima */
+    font-size: 0.9rem; /* Disminuye el tamaño de fuente */
+  }
 
-.contador span {
-  display: block;
-  font-size: 1.0rem;
-  color: #7b4b94;
-  margin-top: 3px;
-}
+  .contador div {
+    flex-direction: column; /* Cambia de fila a columna */
+    gap: 5px; /* Reduce el espacio entre los elementos */
+    padding: 10px 15px; /* Ajusta el padding */
+  }
 
+  .contador div span {
+    padding: 5px 8px; /* Ajusta el tamaño de los números */
+    font-size: 1.2rem; /* Reduce el tamaño de los números */
+  }
+}
 .contador div:hover .countdown {
   color: #d66b89;
 }
