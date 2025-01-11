@@ -1311,6 +1311,15 @@ header {
   max-width: 100%;
   height: auto;
 }
+.imagen-enlace {
+  border-radius: 10px; /* Redondea las esquinas */
+  transition: transform 0.3s; /* Añade una transición suave */
+}
+
+.imagen-enlace:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
 
 .luxurious-script-regular {
   font-family: "Luxurious Script", serif;
