@@ -1077,8 +1077,9 @@ header {
 .container img {
   display: inline-block; /* Hace que la imagen y el texto estén en línea */
   vertical-align: center; /* Alinea verticalmente */
-  margin-right: 10px; /* Opcional: agrega espacio entre la imagen y el texto */
-  
+    /* Opcional: agrega espacio entre la imagen y el texto */
+  width: 200px;
+  height: auto;
 }
 .container text {
   display: inline-block; /* Hace que la imagen y el texto estén en línea */
@@ -1088,19 +1089,22 @@ header {
 }
 
 .container P {
-
-  font-family: "Luxurious Script", serif;
-  font-weight: 300;
-  font-size: 1rem;
+  font-family: "Antic Didone", serif;
+  font-weight: 100;
   font-style: normal;
+  font-size: .7rem; 
 }
-
 .container h2 {
   text-align: center;
-  font-size: 1em;
+  font-size: .8rem;
   margin-bottom: 10px;
 }
-
+.container h3 {
+    font-family: "Meie Script", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
 .music-controls {
   display: flex;
   align-items: center;
@@ -1110,7 +1114,7 @@ header {
 
 .button-confirm {
   color: #fff;
-  background-color: #f0d5ee;
+  background-color: #d4a59a;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
