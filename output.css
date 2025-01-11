@@ -1159,18 +1159,17 @@ header {
   width: 100px;
 }
 
-.fotonovios {
-  
+.fotonovios img {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
-
+  width: 90%;
+  max-width: 1200px;
 }
 
 
