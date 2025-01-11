@@ -1302,7 +1302,15 @@ header {
   font-weight: 150;
   font-style: normal;
 }
-
+.content3 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 
 .luxurious-script-regular {
   font-family: "Luxurious Script", serif;
