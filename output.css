@@ -1303,7 +1303,7 @@ header {
   font-style: normal;
 }
 .content3 img{
-  display: flex;
+ 
   justify-content: center;
   align-items: center;
   display: block;
