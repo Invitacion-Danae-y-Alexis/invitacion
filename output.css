@@ -1352,9 +1352,10 @@ font-size: 2.5rem;
 .despedida {
   color: #000000;
   font-weight: bold;
-  font-family: "Antic Didone", serif;
-  font-weight: 150;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   font-style: normal;
+  font-size: 1REM;
 }
 .button-confirm {
   color: #000000;
