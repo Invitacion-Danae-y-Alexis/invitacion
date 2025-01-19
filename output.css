@@ -120,6 +120,7 @@ p {
   font-family: "Antic Didone", serif;
     font-weight: 400;
     font-style: normal;
+  margin-top: 200px;
 }
 
 .contador div:hover {
