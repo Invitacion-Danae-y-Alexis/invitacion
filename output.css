@@ -1271,6 +1271,13 @@ font-weight: 500;
 font-size: 2.5rem;
 }
 
+.itinerario-content h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1500;
+  font-style: normal;
+  font-size: 1REM;
+  }
+
 .dress-code-content img {
   display: block;
   margin: 0 auto;
