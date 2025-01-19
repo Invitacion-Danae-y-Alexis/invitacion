@@ -1093,6 +1093,9 @@ object-fit:cover;
   text-align: center;
   font-size: .8rem;
   margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .container h3 {
     font-family: "Meie Script", serif;
