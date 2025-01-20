@@ -390,10 +390,25 @@ overflow: visible;
   text-align: center;
   justify-content: center;
   align-items: center;
-  
+  margin top: 20px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.808);
 }
+.dress-code-container3 {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 45vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
 .itinerario-container {
   display: flex;
   width: 90%;
