@@ -210,31 +210,44 @@ hiddenElements.forEach(el => observer.observe(el));
     }
       // Variables para controlar el índice actual del carrusel y el audio
       let currentIndex = 0;
-      const carouselImages = document.getElementById('carouselImages');
-      const images = document.querySelectorAll('.carousel img');
-      const weddingMusic = document.getElementById('weddingMusic');
-      let autoSlide; // Intervalo de tiempo para cambiar de imagen
-      let isPlaying = false; // Estado de reproducción del audio y carrusel
-  
-      // Función para actualizar la posición del carrusel
-      function updateCarousel() {
-          carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }
-  
-      // Avanza a la siguiente imagen
-      function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length; // Reinicia a la primera imagen cuando llega al final
-          updateCarousel();
-          
-      }
-  
-      // Retrocede a la imagen anterior
-      function prevImage() {
-          currentIndex = (currentIndex - 1 + images.length) % images.length; // Vuelve a la última imagen si está en la primera
-          updateCarousel();
+  const carouselImages = document.getElementById('carouselImages');
+  const images = document.querySelectorAll('.carousel img');
 
+  // Función para actualizar la posición del carrusel
+  function updateCarousel() {
+      const imageWidth = images[0].clientWidth; // Ancho dinámico de cada imagen
+      carouselImages.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+  }
 
+  // Avanza a la siguiente imagen
+  function nextImage() {
+      if (currentIndex < images.length - 1) {
+          currentIndex++;
+      } else {
+          currentIndex = 0; // Reinicia a la primera imagen
       }
+      updateCarousel();
+  }
+
+  // Retrocede a la imagen anterior
+  function prevImage() {
+      if (currentIndex > 0) {
+          currentIndex--;
+      } else {
+          currentIndex = images.length - 1; // Va a la última imagen
+      }
+      updateCarousel();
+  }
+
+  // Listeners para los botones
+  document.getElementById('nextBtn').addEventListener('click', nextImage);
+  document.getElementById('prevBtn').addEventListener('click', prevImage);
+
+  // Asegurarte de que las imágenes se ajusten dinámicamente
+  window.addEventListener('resize', updateCarousel);
+
+  // Inicia el carrusel en la primera imagen
+  updateCarousel();
       
        // Define la fecha objetivo (año, mes -1, día, hora, minuto, segundo)
        const fechaObjetivo = new Date(2025, 2, 22, 19, 0, 0).getTime();
