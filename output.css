@@ -167,7 +167,7 @@ object-fit:cover;
 overflow: visible;
 }
 .carousel {
-  width: 90%;
+  width: 80%;
   max-height: 200px;
   max-width: 1200px;
   margin: 0 auto;
