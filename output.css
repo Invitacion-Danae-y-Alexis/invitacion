@@ -390,7 +390,7 @@ overflow: visible;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin top: 20px;
+  margin-top: 20px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.808);
 }
@@ -404,6 +404,7 @@ overflow: visible;
   border-radius: 10px;
   text-align: center;
   justify-content: center;
+  margin-top: 40px;
   align-items: center;
   position: relative;
   background-color: rgba(255, 255, 255, 0.808);
