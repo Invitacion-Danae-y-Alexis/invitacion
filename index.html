@@ -1,304 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación de Boda</title>
-    <link rel="stylesheet" href="index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header con Carrete de Fotografías -->
     <header>
-      <img src="DSC_9395.png" alt="" />
+        <img src="DSC_9395.png" alt="">
     </header>
     <div class="alerta" id="alerta">
       <div class="alerta-contenido">
-        <p>Hola, para nosotros es un placer compartir este momento contigo.</p>
-        <button onclick="cerrarAlertaYReproducir()">Comenzar</button>
+          <p>Hola, para nosotros es un placer compartir este momento contigo.</p>
+          <button onclick="cerrarAlertaYReproducir()">Comenzar</button>
       </div>
     </div>
 
+    <!-- Contenedor Principal -->
+     
+      
     <div class="container">
-      <div>
-        <img src="logo.png" alt="Foto 1" />
-        <br />
-        <br />
-        <h2>
-          TIENEN EL GUSTO DE INVITARTE A <br />SER TESTIGO DE SU AMOR, ESTE
-        </h2>
-        <h3><strong>22 de Marzo de 2025</strong></h3>
-        <br />
+      <div class="hidden">
+        <img src="logo.png" alt="Foto 1">
+        <BR> <br>
+        <h2>TIENEN EL GUSTO DE INVITARTE A <br>SER TESTIGO DE SU AMOR, ESTE </h2>
+        <h3><strong>22 de Marzo de 2025</strong>  <br>  <br>
         <p>
-          La historia de nuestro amor ha sido un viaje maravilloso, lleno de
-          momentos alegres, divertidos e inolvidables. <br /><br />
-          Ahora, queremos invitarte a celebrar el inicio de nuestro nuevo
-          capítulo como esposos. Tu presencia hará que nuestra boda sea aún más
-          especial para nosotros.
-        </p>
-        <br />
-        <a
-          href="https://api.whatsapp.com/send?phone=8115438222&text=Confirmo mi asistencia pal bodorrio"
-        >
-          <button type="submit" class="button-confir">
-            Confirmar asistencia
-          </button>
+          La historia de nuestro amor ha sido un viaje maravilloso, lleno de momentos alegres, 
+          divertidos e inolvidables. <br><br> Ahora, queremos invitarte a celebrar el inicio de nuestro nuevo capítulo como esposos. 
+          Tu presencia hará que nuestra boda sea aún más especial para nosotros.</p>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=8115438222&text=Confirmo mi asistencia pal bodorrio"> <button type="submit" class="button-confir">Confirmar asistencia</button>
         </a>
       </div>
+    </div>
 
       <div class="carousel">
-        <button class="carousel-button left" id="prevBtn">❮</button>
+        <button class="carousel-button left" onclick="prevImage()">❮</button>
         <div class="carousel-images" id="carouselImages">
-          <img src="1.jpg" alt="Foto 1" />
-          <img src="2.jpg" alt="Foto 2" />
-          <img src="DSC_8934.jpg" alt="Foto 3" />
-          <img src="DSC_8939.jpg" alt="Foto 4" />
-          <img src="DSC_8968.JPG" alt="Foto 5" />
-          <img src="DSC_9039.jpg" alt="Foto 6" />
-          <img src="DSC_9019.JPG" alt="Foto 7" />
-          <img src="DSC_9056.jpg" alt="Foto 8" />
-          <img src="DSC_9059.jpg" alt="Foto 9" />
+          <img src="1.jpg" alt="Foto 1">
+          <img src="2.jpg" alt="Foto 2">
+          <img src="DSC_8934.jpg" alt="Foto 3">
+          <img src="DSC_8939.jpg" alt="Foto 4">
+          <img src="DSC_8968.JPG" alt="Foto 5">
+          <img src="DSC_9039.jpg" alt="Foto 6">
+          <img src="DSC_9019.JPG" alt="Foto 7">
+          <img src="DSC_9056.jpg" alt="Foto 8">
+          <img src="DSC_9059.jpg" alt="Foto 9">
         </div>
-        <button class="carousel-button right" id="nextBtn">❯</button>
+        <button class="carousel-button right" onclick="nextImage()">❯</button>
       </div>
-    </div>
-
+      
+  
+    
+    
+     <!-- Audio para la Canción -->
     <audio id="weddingMusic" src="tu-cancion.mp3" autoplay></audio>
-
-    <div class="contador">
-      <div>
-        <span class="countdown" id="dias">62</span>
-        <span>days</span>
-      </div>
-      <div>
-        <span class="countdown" id="horas">4</span>
-        <span>hours</span>
-      </div>
-      <div>
-        <span class="countdown" id="minutos">12</span>
-        <span>min</span>
-      </div>
-      <div>
-        <span class="countdown" id="segundos">59</span>
-        <span>sec</span>
-      </div>
-    </div>
-
-    <section class="dress-code-container3">
-      <div class="dress-code-content3">
+    
+   <div class="contador">
+  <div>
+    <span class="countdown" id="dias">62</span>
+    <span>days</span>
+  </div>
+  <div>
+    <span class="countdown" id="horas">4</span>
+    <span>hours</span>
+  </div>
+  <div>
+    <span class="countdown" id="minutos">12</span>
+    <span>min</span>
+  </div>
+  <div>
+    <span class="countdown" id="segundos">59</span>
+    <span>sec</span>
+  </div>
+</div>
+  
+  
+    
+      <div class="dress-code-content5">
         <div class="hidden">
           <h2>Los novios</h2>
-          <h3>Marvin Alexis Trevino Casas</h3>
+           <h3>Marvin Alexis Trevino Casas</h3>
           <h3>&</h3>
           <h3>Danae Hernandez Rodriguez</h3>
+
+          
+          </div>
         </div>
-      </div>
-    </section>
+      
 
-    <section class="itinerario-container">
-      <div class="itinerario-content">
-        <h2>Itinerario</h2>
-        <h5>El gran día</h5>
-        <img width="80vh" height="80vh" src="itinerario.png" />
-        <p>
-          Salón Emporio Eventos<br />
-          Av. Guadalajara 428, Hacienda de San Miguel,<br />
-          67113 Guadalupe, N.L.
-        </p>
-        <br />
-        <h5>RECEPCIÓN: 6:30 PM</h5>
-        <p>
-          Cada minuto cuenta en esta celebración de amor. <br />
-          Por favor, sé puntual para no perderte ningún momento especial
-        </p>
-
-        <h5>Da clic para ver la ubicación:</h5>
-        <a
-          href="https://maps.app.goo.gl/PKKskXuWhrGY1XeD8"
-          title="Conoce ubicacion"
-        >
-          <img
-            width="80vh"
-            height="80vh"
-            src="ubicacion.png"
-            alt="ubicacion"
-            class="imagen-enlace"
-          />
-        </a>
-      </div>
-    </section>
 
     <section class="foto4">
       <div class="fotonovios">
-        <img src="DSC_9062.jpg" alt="" />
-      </div>
-    </section>
+        
+          <img src="DSC_9404.jpg" alt="">
+        </div>
+      </section>
+    
 
+      <section class="itinerario-container">
+        <div class="itinerario-content">
+            <h2>Itinerario</h2>
+            <h5>El gran día</h5>
+            <img width="80vh" height="80vh"  src="itinerario.png" />
+            <p>Salón Emporio Eventos<br>
+              Av. Guadalajara 428, Hacienda de San Miguel,<br> 67113 Guadalupe, N.L.</p>  <br> 
+            <h5>RECEPCIÓN: 6:30 PM</h5>
+            <p>Cada minuto cuenta en esta celebración de amor. <BR> 
+                    Por favor, sé puntual para no perderte ningún momento especial</p>
+                    
+                    <h5>Da clic para ver la ubicación:</h5>
+                    <a href="https://maps.app.goo.gl/PKKskXuWhrGY1XeD8" title="Conoce ubicacion">
+                      <img width="80vh" height="80vh"  src="ubicacion.png" alt="ubicacion" class="imagen-enlace">
+                    </a>
+              
+          </div>
+        </section>
+      
+        <section class="foto4">
+          <div class="fotonovios">
+              <img src="DSC_9062.jpg" alt="">
+            </div>
+          </section>
+  
     <section class="dress-code-container">
       <div class="dress-code-content">
         <div class="hidden">
           <h2>Codigo de vestimenta</h2>
-          <img width="80vh" height="80vh" src="vestimenta.png" />
+          <img width="80vh" height="80vh"  src="vestimenta.png" />
           <p>FORMAL</p>
-          <p>
-            Por favor, vístete para la ocasión con ropa formal. <br />¡Nos
-            encantaría verte en tu mejor atuendo!
-          </p>
-          <h2>Regalo</h2>
-          <img width="65vh" height="30vh" src="sobre.PNG" />
-          <p>LLUVIA DE SOBRES</p>
-          <p>
-            Sus buenos deseos son suficientes para nosotros y en caso de querer
-            hacernos un regalito, este puede ser en efectivo.
-          </p>
+          <p>Por favor, vístete para la ocasión con ropa formal. <br>¡Nos encantaría verte en tu mejor atuendo!</p>   
+          <h2>Regalo</h2> 
+              <img width="65vh" height="30vh" src="sobre.PNG" />
+              <p>LLUVIA DE SOBRES</p>
+              <P>Sus buenos deseos son suficientes para nosotros y en caso de querer hacernos un regalito, este puede ser en efectivo.</P>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    
 
-    <section class="foto4">
-      <div class="fotonovios">
-        <img src="DSC_9094.jpg" alt="" />
-      </div>
-    </section>
+         
+       
 
-    <div class="despedida">
-      <strong
-        ><p>
-          Queremos que esta celebración también la disfrutes tanto como
-          nosotros, por eso hemos decidido NO extender la invitación a NIÑOS.
-        </p></strong
-      >
-    </div>
-    <br />
-    <a
-      href="https://api.whatsapp.com/send?phone=8115438222&text=Confirmo mi asistencia pal bodorrio"
-    >
-      <button type="submit" class="button-confir">Confirmar asistencia</button>
-    </a>
+      <section class="foto4">
+        <div class="fotonovios">
+            <img src="DSC_9094.jpg" alt="">
+          </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script>
-      var countDownDate = new Date("Mar 22, 2025 18:30:00").getTime();
+        
+        <div class="despedida">
+              <strong><p>QUEREMOS QUE ESTA CELEBRACIÓN TAMBIEN LA <br>DISFRUTES TANTO COMO  NOSOTROS,
+               POR ESO HEMOS DECIDIDO NO EXTENDER LA INVITACIÓN A NIÑOS.</p></strong>
+        </div>    <br>
+        <a href="https://api.whatsapp.com/send?phone=8115438222&text=Confirmo mi asistencia pal bodorrio"> <button type="submit" class="button-confir">Confirmar asistencia</button>
+        </a>
+            
 
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        $("#dias").text(days);
-        $("#horas").text(hours);
-        $("#minutos").text(minutes);
-        $("#segundos").text(seconds);
-
-        if (distance < 0) {
-          clearInterval(x);
-        }
-      }, 1000);
-    </script>
 
     <script>
       // Selecciona todos los elementos con la clase 'hidden'
-      const hiddenElements = document.querySelectorAll(".hidden");
+    const hiddenElements = document.querySelectorAll('.hidden');
 
-      // Configura Intersection Observer
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show"); // Agrega la clase 'show' al entrar en el viewport
+// Configura Intersection Observer
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // Agrega la clase 'show' al entrar en el viewport
             observer.unobserve(entry.target); // Deja de observar el elemento
-          }
-        });
-      });
+        }
+    });
+});
 
-      function startAutoSlide() {
-        setInterval(function () {
-          nextImage();
-        }, 3000); // slide every 3 seconds
-      }
+// Aplica el observer a cada elemento
+hiddenElements.forEach(el => observer.observe(el));
+       window.onload = function() {
+        const alerta = document.getElementById('alerta');
+        alerta.style.display = 'flex';  // Muestra la alerta
+    };
 
-      // Aplica el observer a cada elemento
-      hiddenElements.forEach((el) => observer.observe(el));
-      window.onload = function () {
-        const alerta = document.getElementById("alerta");
-        alerta.style.display = "flex"; // Muestra la alerta
-      };
-
-      // Función para cerrar la alerta y reproducir la música
-      function cerrarAlertaYReproducir() {
-        const alerta = document.getElementById("alerta");
-        const weddingMusic = document.getElementById("weddingMusic");
-
-        alerta.style.display = "none"; // Cierra la alerta
-        weddingMusic.play(); // Reproduce la música
+    // Función para cerrar la alerta y reproducir la música
+    function cerrarAlertaYReproducir() {
+        const alerta = document.getElementById('alerta');
+        const weddingMusic = document.getElementById('weddingMusic');
+        
+        alerta.style.display = 'none';  // Cierra la alerta
+        weddingMusic.play();  // Reproduce la música
         startAutoSlide();
-      }
+    }
       // Variables para controlar el índice actual del carrusel y el audio
       let currentIndex = 0;
-      const carouselImages = document.getElementById("carouselImages");
-      const images = document.querySelectorAll(".carousel img");
-
+      const carouselImages = document.getElementById('carouselImages');
+      const images = document.querySelectorAll('.carousel img');
+      const weddingMusic = document.getElementById('weddingMusic');
+      let autoSlide; // Intervalo de tiempo para cambiar de imagen
+      let isPlaying = false; // Estado de reproducción del audio y carrusel
+  
       // Función para actualizar la posición del carrusel
       function updateCarousel() {
-        const imageWidth = images[0].clientWidth; // Ancho dinámico de cada imagen
-        carouselImages.style.transform = `translateX(-${
-          currentIndex * imageWidth
-        }px)`;
+          carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
-
+  
       // Avanza a la siguiente imagen
       function nextImage() {
-        if (currentIndex < images.length - 1) {
-          currentIndex++;
-        } else {
-          currentIndex = 0; // Reinicia a la primera imagen
-        }
-        updateCarousel();
+          currentIndex = (currentIndex + 1) % images.length; // Reinicia a la primera imagen cuando llega al final
+          updateCarousel();
+          
       }
-
+  
       // Retrocede a la imagen anterior
       function prevImage() {
-        if (currentIndex > 0) {
-          currentIndex--;
-        } else {
-          currentIndex = images.length - 1; // Va a la última imagen
-        }
-        updateCarousel();
+          currentIndex = (currentIndex - 1 + images.length) % images.length; // Vuelve a la última imagen si está en la primera
+          updateCarousel();
+
+
       }
+      
+       // Define la fecha objetivo (año, mes -1, día, hora, minuto, segundo)
+       const fechaObjetivo = new Date(2025, 2, 22, 19, 0, 0).getTime();
 
-      // Listeners para los botones
-      document.getElementById("nextBtn").addEventListener("click", nextImage);
-      document.getElementById("prevBtn").addEventListener("click", prevImage);
+function actualizarContador() {
+    const ahora = new Date().getTime();
+    const tiempoRestante = fechaObjetivo - ahora;
 
-      // Asegurarte de que las imágenes se ajusten dinámicamente
-      window.addEventListener("resize", updateCarousel);
+    if (tiempoRestante > 0) {
+        const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
 
-      // Inicia el carrusel en la primera imagen
-      updateCarousel();
+        // Actualiza cada elemento con el ID correspondiente
+        document.getElementById("dias").innerHTML = dias;
+        document.getElementById("horas").innerHTML = horas;
+        document.getElementById("minutos").innerHTML = minutos;
+        document.getElementById("segundos").innerHTML = segundos;
+    } else {
+        document.querySelector(".contador").innerHTML = "¡El evento ha comenzado!";
+    }
+}
 
-      // Define la fecha objetivo (año, mes -1, día, hora, minuto, segundo)
-      const fechaObjetivo = new Date(2025, 2, 22, 19, 0, 0).getTime();
-    </script>
-  </body>
+// Llama a la función cada segundo
+setInterval(actualizarContador, 1000);
+  </script>
+  
+
+</body>
 </html>
