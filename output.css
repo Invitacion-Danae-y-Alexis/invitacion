@@ -1,0 +1,595 @@
+body {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url('fondom.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+  color: #333;
+  background-color: #e0bccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, p {
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #a8836f;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #d4a59a;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+}
+
+.hidden {
+  opacity: 0; /* Hace invisible el elemento */
+  transform: translateY(20px); /* Lo mueve ligeramente hacia abajo */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Suaviza la transición */
+  visibility: hidden; /* Asegura que no sea clickeable */
+}
+
+.show {
+  opacity: 1; /* Lo hace visible */
+  transform: translateY(0); /* Restaura la posición original */
+  visibility: visible; /* Lo hace interactivo */
+}
+
+
+.section {
+  margin: 100px 0;
+  padding: 50px;
+  background: #f4f4f4;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.alerta {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alerta-contenido {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alerta button {
+  padding: 10px 20px;
+  background-color: #7b4b94;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.alerta button:hover {
+  background-color: #d66b89;
+}
+
+.contador {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: url('DSC_9432.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  border-radius: 15px;
+}
+
+.contador div {
+  display: flex;
+  flex-direction: column; /* Alinear número y texto en vertical */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente */
+  padding: 20px 30px;
+  border-radius: 15px; /* Bordes redondeados más pronunciados */
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s ease;
+  font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 200px;
+}
+
+.contador div:hover {
+  transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.countdown {
+  font-size: 48px; /* Tamaño más grande para los números */
+  font-weight: bold;
+  color: #333; /* Color oscuro */
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .contador {
+    min-height: 40vh; /* Reduce la altura mínima en móviles */
+  }
+
+  .contador div {
+    flex-direction: column; /* Cambia a diseño en columna */
+     /* Ajusta el espacio entre los elementos */
+    padding: 8px 20px; /* Reduce el padding */
+  }
+
+  .contador div span {     /* Reduce el tamaño del padding */
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+}
+
+.contador div:hover span {
+  background-color: #f7d9e3; /* Efecto de hover en los números */
+  color: #d66b89; /* Cambia el color del texto */
+}
+header {
+  width: 100%;
+  height: auto
+  
+}
+header img {
+width: 100%;
+height: 340px;
+object-fit:cover;
+overflow: visible;
+}
+.carousel {
+  width: 100%;
+  max-height: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 45vh;
+  margin: 30px 0;
+  position: relative;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+  
+
+.carousel img {
+  width: 120%; 
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 55vh;
+  background-color: #f8f1f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  z-index: 5;
+  position: relative;
+}
+.container img {
+  display: inline-block; /* Hace que la imagen y el texto estén en línea */
+  vertical-align: center; /* Alinea verticalmente */
+    /* Opcional: agrega espacio entre la imagen y el texto */
+  width: 200px;
+  height: auto;
+}
+.container text {
+  display: inline-block; /* Hace que la imagen y el texto estén en línea */
+  vertical-align: center; /* Alinea verticalmente */
+  margin-right: 10px; /* Opcional: agrega espacio entre la imagen y el texto */
+  
+}
+
+.container P {
+  font-family: "Antic Didone", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1rem; 
+}
+.container h2 {
+  text-align: center;
+  font-size: .8rem;
+  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.container h3 {
+    font-family: "Meie Script", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.7rem;
+  }
+   
+
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.button-confir {
+  font-family: "Antic Didone", serif;
+  color: #f1f1f1;
+  background-color: #d4a59a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.button-confirm:hover {
+  background-color: #218838;
+}
+
+.button-confirm:active {
+  background-color: #1e7e34;
+}
+
+.music-button {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.music-button:hover {
+  background-color: #d4a59a;
+}
+
+.volume-slider {
+  width: 100px;
+}
+
+.fotonovios img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+.dress-code-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 40vh;
+  margin-top: 30px;
+  background: url('media/dress-code-image.jpg') no-repeat center center/cover;
+  background-size: cover;
+  color: rgb(192, 4, 4);
+  border-radius: 15px;
+}
+
+.dress-code-content2 {
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 40vh;
+}
+
+.dress-code-content2 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.dress-code-content2 h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dress-code-content2 h5,
+.dress-code-content2 p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #000000;
+  line-height: 1.5;
+}
+
+
+.dress-code-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 45vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+.dress-code-content5 {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 25vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.itinerario-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.itinerario-container img {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.itinerario-container p{
+  font-family: "Antic Didone", serif;
+  font-style: normal;
+  font-size: 1rem; 
+}
+
+.itinerario-content h2 {
+font-family: "Luxurious Script", serif;
+color: black ;
+font-weight: 500;
+font-size: 2.5rem;
+}
+
+.itinerario-content h5 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1500;
+  font-style: normal;
+  font-size: 1REM;
+  }
+
+.dress-code-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.dress-code-content h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Luxurious Script", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.dress-code-content h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+.dress-code-content p {
+  font-family: "Antic Didone", serif;
+  text-align: center;
+  font-size: .9em;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.content3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 40vh;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Antic Didone", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+.content3 img{
+ 
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.despedida {
+  color: #000000;
+  font-weight: bold;
+  font-family: "Antic Didone", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+.button-confirm {
+  color: #000000;
+  font-weight: bold;
+  font-family: "Antic Didone", serif;
+  font-weight: 150;
+  font-style: normal;
+}
+.imagen-enlace {
+  border-radius: 10px; /* Redondea las esquinas */
+  transition: transform 0.3s; /* Añade una transición suave */
+}
+
+.imagen-enlace:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+
+.luxurious-script-regular {
+  font-family: "Luxurious Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.antic-didone-regular {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.play-pause-button {
+  background-color: #3333337a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  z-index: 50;
+  top: -180px;
+  left: 42%;
+}
+
+.play-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.pause-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.play-pause-button:hover {
+  background-color: #555;
+}
+
+.play-pause-button.playing {
+  background-color: #555;
+}
+
+.play-pause-button.playing .play-icon {
+  display: none;
+}
+
+.play-pause-button.playing .pause-icon {
+  display: block;
+}
