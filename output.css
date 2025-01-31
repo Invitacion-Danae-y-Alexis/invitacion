@@ -224,6 +224,7 @@ overflow: visible;
   margin-top: 40px;
   z-index: 5;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.808);
 }
 .container img {
   display: inline-block; /* Hace que la imagen y el texto estén en línea */
