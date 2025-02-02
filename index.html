@@ -178,6 +178,12 @@
 
 
     <script>
+        window.addEventListener("scroll", function () {
+  let scrollPos = window.scrollY;
+  let img = document.querySelector(".header img");
+
+  img.style.transform = `translateX(-50%) translateY(${scrollPos * 0.3}px) scale(1.2)`;
+});
       // Selecciona todos los elementos con la clase 'hidden'
     const hiddenElements = document.querySelectorAll('.hidden');
 
