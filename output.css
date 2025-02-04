@@ -172,7 +172,7 @@ p {
   top: 0;
   left: 50%;
   transform: translateX(-50%) scale(1.0); /* Centrar y hacer zoom */
-  width: 100%; /* Asegura que la imagen se extienda más allá del header */
+  width: 128%; /* Asegura que la imagen se extienda más allá del header */
   height: auto;
 }
 
