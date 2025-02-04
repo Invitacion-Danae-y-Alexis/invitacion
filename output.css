@@ -209,6 +209,7 @@ p {
   border: none;
   cursor: pointer;
   padding: 10px;
+  font-size: 170%;
 }
 
 .carousel-button.left {
