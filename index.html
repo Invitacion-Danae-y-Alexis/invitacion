@@ -207,11 +207,9 @@ hiddenElements.forEach(el => observer.observe(el));
     // Función para cerrar la alerta y reproducir la música
     function cerrarAlertaYReproducir() {
         const alerta = document.getElementById('alerta');
-        const weddingMusic = document.getElementById('weddingMusic');
+       
+       
         
-        alerta.style.display = 'none';  // Cierra la alerta
-        weddingMusic.play();  // Reproduce la música
-        startAutoSlide();
     }
       // Variables para controlar el índice actual del carrusel y el audio
       let currentIndex = 0;
